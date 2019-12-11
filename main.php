@@ -44,7 +44,7 @@
 
         <section class="hotsite--cta">
           <div class="hotsite--cta__wrapper">
-            <button>cta</button>
+            <button>Acompanhe seu pedido <img class="arrow-icon-btn" src="/images-hot-3/arrow-btn.png"></button>
           </div>
         </section><!-- cta -->
 
@@ -57,13 +57,13 @@
                     <img src="/images-hot-3/boleto.png">
                   </div>
                   <div class="hotsite--pagamento__hero-title">
-                    <h1>title</h1>
+                    <h1>Boleto bancário a prazo</h1>
                   </div>
                 </div>
                 <div class="hotsite--pagamento__content">
-                  <p>p-1</p>
-                  <p>p-2</p>
-                  <p>p-3</p>
+                  <p>Parcele suas compras em até 6X sem juros, com parcela mínima de R$ 200.</p>
+                  <p>Caso opte por essa modalidade, você receberá por e-mail e Correios uma fatura mensal que consolida todos os boletos do período.</p>
+                  <p>O vencimento é escolhido automaticamente pelo sistema e não pode ser alterado, ele varia entre os dias 16, 21 ou 26 de cada mês.</p>
                 </div>
               </div><!-- boletos-1 wrapper -->
             </div><!-- boletos-1  -->
@@ -75,31 +75,38 @@
                     <img src="/images-hot-3/boleto.png">
                   </div>
                   <div class="hotsite--pagamento__hero-title">
-                    <h1>title</h1>
+                    <h1>Boleto bancário simplificado</h1>
                   </div>
                 </div>
                 <div class="hotsite--pagamento__content">
-                  <p>p-1</p>
-                  <p>p-2</p>
-                  <p>p-3</p>
+                  <p>Nesta opção o boleto é gerado na hora da compra. Você tem até 5 dias para efetuar o pagamento e seu pedido ficará retido até que ele seja confirmado.</p>
+                  <p>Caso opte por esse formato, você ganhará 3% de desconto.</p>
+                  <p>Para adiantar a liberação do pedido, envie o comprovante para o e-mail deposito@dentalcremer.com.br.</p>
                 </div>
               </div><!-- boletos-2 wrapper -->
             </div><!-- boletos-2  -->
 
             <div class="hotsite--credit-card">
               <div class="hotsite--credit-card__wrapper">
-                <div class="hotsite--pagamento__hero">
-                  <div class="hotsite--pagamento__hero-icon">
+                <div class="hotsite--pagamento__hero-card">
+                  <div class="hotsite--pagamento__hero-card-icon">
                     <img src="/images-hot-3/card.png">
                   </div>
                   <div class="hotsite--pagamento__hero-title">
-                    <h1>title</h1>
+                    <h1>cartão de crédito</h1>
                   </div>
                 </div>
                 <div class="hotsite--pagamento__content">
-                  <p>p-1</p>
-                  <p>p-2</p>
-                  <p>p-3</p>
+                  <div class="group-one">
+                    <p>Parcele suas compras em até 10X sem juros, com parcela mínima de R$ 200.</p>
+                    <p>Essa é a forma mais rápida para processar o seu pedido.</p>
+                    <p>Aceitamos as bandeiras Visa, MasterCard, Diners,</p>
+                    <p>American Express (AMEX) e Elo.</p>
+                  </div>
+                  <div class="group-two">
+                    <p>Na hora de optar pelo pagamento parcelado no cartão, leve em consideração o valor total da compra e não somente o valor da parcela, a quantia deve estar dentro do limite total do seu cartão de crédito.</p>
+                    <p>Importante: compras no cartão de crédito não serão consolidadas na fatura mensal.</p>
+                  </div>
                 </div>
               </div><!-- credit-card wrapper -->
             </div><!-- credit-card  -->

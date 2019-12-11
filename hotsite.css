@@ -6,7 +6,7 @@
   margin-top: 136px;
   max-width: 1920px;
   width: 100%;
-  height: 1926px; 
+  height: auto; 
   overflow: hidden;
 }
 
@@ -21,19 +21,17 @@
   background-image: url('/images-hot-3/desk--background.png');
   background-repeat: no-repeat;
   background-size: contain;
-  /* background: no-repeat center/100% url( "/images-hot-3/desk--background.png"); */
 }
 
 .hotsite--frete,
-.hotsite--prazo,
-.hotsite--pagamento{
+.hotsite--prazo{
   margin: 0 auto;
   max-width: 39vw;
-  height: 13vw;
+  height: 11vw;
   border: 2px solid #c3dbea;
-  border-radius: 5px;
+  border-radius: 0.7vw;
   background-color: #fff;
-  margin-bottom: 6.3vw;
+  margin-bottom: 5vw;
   padding: 2vw;
 }
 
@@ -44,34 +42,42 @@
   color: #184567;
   text-transform: uppercase;
   text-align: left;
-  /* padding-left: 1.3vw; */
 }
 
-.hotsite--frete__content{
+.hotsite--frete__content,
+.hotsite--prazo__content,
+.hotsite--pagamento__content
+{
   padding-top: 0.1vw;
 }
 
+.hotsite--prazo__content p,
+.hotsite--pagamento__content p,
 .hotsite--frete__content p{
   font-family: Roboto;
   font-size: 0.90vw;
   color: #184567;
   text-align: left;
   padding-left: 1vw;
-  margin-bottom: 2.5vw;
+  margin-bottom: 2vw;
   line-height: 1.5vw;
 }
 
 .hotsite--hero__icon{
-  transform: translateX(0vw) translateY(4vw);
+  transform: translateX(0vw) translateY(3vw);
   padding: 0 1vw;
-  /* margin: 1vw; */
   background-color: #fff;
   max-width: 12vw;
 }
 
 .hotsite--hero__icon img{
   width: 100%;
-  /* transform: translateY(-5px); */
+}
+
+.hotsite--pagamento__hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 7vw auto;
 }
 
 /* style universal */
@@ -89,7 +95,6 @@
   margin: 0 auto;
   padding: 0;
   transform: translateX(1vw) translateY(4.3vw);
-  /* border: 1px solid red; */
 }
 
 .hotsite--title .ornament{
@@ -124,17 +129,6 @@
   text-shadow: 0px 2px 9px #ffa33e;
 }
 
-/*
-text-shadow: 0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px #ffa33e,
-    0 0 80px #ffa33e,
-    0 0 90px #ffa33e,
-    0 0 100px #ffa33e,
-    0 0 150px #ffa33e;
-*/
-
 /* frete */
 
 .hotsite--frete{
@@ -146,6 +140,62 @@ text-shadow: 0 0 5px #fff,
 {
   display: grid;
   grid-template-columns: 40% 60%;
+}
+
+/* cta */
+
+.hotsite--cta{
+  padding: 2vw 0 3vw 0;
+}
+
+.hotsite--cta button{
+  position: relative;
+  background-color: #184567;
+  color: #fff;
+  padding: 0.7vw 1vw 0.9vw 0.1vw;
+  border-radius: 11px;
+  border: none;
+  width: 15vw;
+  font-size: 1vw;
+}
+
+.arrow-icon-btn{
+  position: absolute;
+  right: 0.9vw;
+  transform: translateY(-50%);
+  top: 50%;
+  /* filter: grayscale(0%); */
+  width: 0.5vw;
+}
+
+/* pagamento */
+
+.hotsite--pagamento__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 2vw;
+  width: 59vw;
+  margin: 0 auto;
+  /* box-sizing: border-box; */
+}
+
+.hotsite--credit-card{
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.hotsite--boletos-1,
+.hotsite--boletos-2,
+.hotsite--credit-card
+{
+  height: 367px;
+  border: 2px solid #c3dbea;
+  border-radius: 0.7vw;
+  background-color: #fff;
+  padding: 2vw 1vw;
+  box-sizing: border-box;
 }
 
 
