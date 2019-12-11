@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap');
+
+.hotsite--container{
+  margin: 0 auto;
+  margin-top: 177px;
+  max-width: 1920px;
+  overflow: hidden;
+}
+
+/* style universal */
+
+.padding-v{
+  padding: 2.5vw 0;
+}
+
+/* buttons */
+
+.hotsite--btn{
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Roboto-Condensed-Web, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 12px;
+  padding: 12px 25px;
+  transition: all 0.3s ease 0s;
+}
+
+.hotsite--btn:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.hotsite--btn.hotsite--outlined{
+  background-color: rgb(255,255,255);
+  color: rgb(0, 0, 0);
+}
+
+.hotsite--btn.hotsite--green{
+  background-color: rgb(3, 244, 76);
+  color: rgb(0, 0, 0);
+}
+
+
+
+/* carousel */
+
+.hotsite--carousel{
+  list-style-type: none;
+}
+
+.hotsite--carousel img{
+  max-width: 100vw;
+}
+
+.hotsite--products .hotsite--carousel{
+  max-width: 66vw;
+  margin: 0 auto;
+}
+
+/* hotsite--banner-principal */
+
+/* hotsite--call-to-action */
+
+/* hotsite--products */
+
+.hotsite--products{
+  box-sizing: border-box;
+  position: relative;
+}
+
+.hotsite--products-price{
+  font-weight: bold;
+}
+
+.hotsite--products__carousel-wrapper{
+  position: relative;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.hotsite--products__carousel-wrapper .owl-item{
+  margin-top: 200px
+}
+
+.hotsite--background-products{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-500px);
+  background-color: #c3dbea;
+  width: 70%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+
+.hotsite--products .carousel__item h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #184567;
+  margin-bottom: 15px;
+}
+
+.hotsite--products__title{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #184567;
+  margin-top: 40px;
+}
+
+.hotsite--products .carousel__item p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  color: #184567;
+  margin-bottom: 5px;
+}
+
+.hotsite--products .carousel__item .hotsite--products-price{
+  margin-bottom: 20px;
+}
+          
+/* hotsite--embassador */
+
+
+/* media queries */
+
+@media (max-width: 3000px) 
+{
+  .mobile
+  {
+  display: none;
+  }
+}
+
+
+@media (max-width: 600px) 
+{
+  .desk 
+  {
+  display: none;
+  }
+
+  .mobile
+  {
+  display: block;
+  }
+}
