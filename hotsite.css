@@ -16,18 +16,19 @@
 }
 
 .hotsite--background{
-  width: 100%;
-  height: 1926px;
+  min-height: 1926px;
   background-image: url('/images-hot-3/desk--background.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
+  margin: 0 auto;
+  background-position: center;
 }
 
 .hotsite--frete,
 .hotsite--prazo{
   margin: 0 auto;
   max-width: 39vw;
-  height: 11vw;
+  height: 10.5vw;
   border: 2px solid #c3dbea;
   border-radius: 0.7vw;
   background-color: #fff;
@@ -35,13 +36,16 @@
   padding: 2vw;
 }
 
-.hotsite--hero__title h1{
+.hotsite--hero__title h1
+{
   font-family: Roboto;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: bold;
   color: #184567;
   text-transform: uppercase;
   text-align: left;
+  line-height: 1.8vw;
+  padding-right: 3vw;
 }
 
 .hotsite--frete__content,
@@ -59,19 +63,19 @@
   color: #184567;
   text-align: left;
   padding-left: 1vw;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
   line-height: 1.5vw;
 }
 
 .hotsite--hero__icon{
-  transform: translateX(0vw) translateY(3vw);
+  transform: translateX(0vw) translateY(4vw);
   padding: 0 1vw;
   background-color: #fff;
   max-width: 12vw;
 }
 
 .hotsite--hero__icon img{
-  width: 100%;
+  width: 90%;
 }
 
 .hotsite--pagamento__hero{
@@ -145,7 +149,7 @@
 /* cta */
 
 .hotsite--cta{
-  padding: 2vw 0 3vw 0;
+  padding: 0vw 0 3vw 0;
 }
 
 .hotsite--cta button{
@@ -190,12 +194,31 @@
 .hotsite--boletos-2,
 .hotsite--credit-card
 {
-  height: 367px;
+  height: 24vw;
   border: 2px solid #c3dbea;
   border-radius: 0.7vw;
   background-color: #fff;
   padding: 2vw 1vw;
   box-sizing: border-box;
+}
+
+.hotsite--pagamento__hero-title h1
+{
+  font-family: Roboto;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #184567;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.hotsite--pagamento__hero-icon img {
+  width: 44%;
+}
+
+.hotsite--pagamento__content p{
+  padding-left: 0vw;
+  text-align: center;
 }
 
 

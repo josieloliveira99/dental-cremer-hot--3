@@ -93,7 +93,7 @@
                     <img src="/images-hot-3/card.png">
                   </div>
                   <div class="hotsite--pagamento__hero-title">
-                    <h1>cartão de crédito</h1>
+                    <h1>Cartão de crédito</h1>
                   </div>
                 </div>
                 <div class="hotsite--pagamento__content">
