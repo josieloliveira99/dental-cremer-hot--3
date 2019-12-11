@@ -3,6 +3,10 @@
     <main class="hotsite--container">
       <div class="hotsite--background">
 
+      <section class="hotsite--title">
+        <h1>Políticas<span class="ornament"></span> comerciais<span class="ornament"></span></h1>
+      </section><!-- title -->
+
         <section class="hotsite--frete">
           <div class="hotsite--frete__wrapper">
             <div class="hotsite--frete__hero">

@@ -9,8 +9,11 @@
     
 </head>
 <body>
-        <header id="header" class="upFloatHeader">
-                <style>
+  <header id="header" class="upFloatHeader">
+    <style>
+    body #header {
+        top: 0;
+    }
     .box-question {
         background-color: rgba(0, 0, 0, 0.5);
         bottom: 0;
