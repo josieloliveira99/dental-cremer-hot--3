@@ -19,8 +19,6 @@
   min-height: 1926px;
   background-image: url('/images-hot-3/desk--background.png');
   background-repeat: no-repeat;
-  /* background-size: contain; */
-  margin: 0 auto;
   background-position: center;
 }
 
@@ -95,42 +93,43 @@
 .hotsite--title{
   position: relative;
   text-align: left;
-  width: 22vw;
+  width: 413px;
   margin: 0 auto;
   padding: 0;
-  transform: translateX(1vw) translateY(4.3vw);
+  padding-top: 75px;
+  /* transform: translateX(1vw); */
 }
 
 .hotsite--title .ornament{
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background-color: #ffa33e;
   border-radius: 100%;
-  box-shadow: 0px 2px 9px #ffa33e;
+  box-shadow: 2px 2px 15px #ffa33e;
 }
 
 .hotsite--title .ornament:nth-of-type(1){
-  top: 1.3vw;
-  right: 2.4vw;
+  top: 25px;
+  right: 42px;
 }
 
 .hotsite--title .ornament:nth-of-type(2){
-  top: 4.6vw;
-  left: -1.5vw;
+  top: 90px;
+  left: -21px;
 }
 
 .hotsite--title h1{
   position: relative;
   font-family: Roboto;
   font-weight: 800;
-  font-size: 3.6vw;
+  font-size: 70px;
   color: #ffa33e;
   text-transform: uppercase;
   padding:  0;
-  line-height: 3.5vw;
-  text-shadow: 0px 2px 9px #ffa33e;
+  line-height: 65px;
+  text-shadow: 2px 2px 6px #ffa33e;
 }
 
 /* frete */
@@ -194,7 +193,7 @@
 .hotsite--boletos-2,
 .hotsite--credit-card
 {
-  height: 24vw;
+  height: 21vw;
   border: 2px solid #c3dbea;
   border-radius: 0.7vw;
   background-color: #fff;
