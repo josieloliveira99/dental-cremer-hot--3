@@ -19,19 +19,21 @@
   min-height: 1926px;
   background-image: url('/images-hot-3/desk--background.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  margin: 0 auto;
 }
 
 .hotsite--frete,
 .hotsite--prazo{
   margin: 0 auto;
-  max-width: 39vw;
-  height: 10.5vw;
+  max-width: 764px;
+  height: 259px;
   border: 2px solid #c3dbea;
-  border-radius: 0.7vw;
+  border-radius: 10px;
   background-color: #fff;
-  margin-bottom: 5vw;
-  padding: 2vw;
+  margin-bottom: 90px;
+  padding: 40px 63px;
+  box-sizing: border-box;
 }
 
 .hotsite--hero__title h1
@@ -97,7 +99,7 @@
   margin: 0 auto;
   padding: 0;
   padding-top: 75px;
-  /* transform: translateX(1vw); */
+  padding-bottom: 60px;
 }
 
 .hotsite--title .ornament{
@@ -134,15 +136,11 @@
 
 /* frete */
 
-.hotsite--frete{
-  margin-top: 7.5vw;
-}
-
 .hotsite--frete__wrapper,
 .hotsite--prazo__wrapper
 {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 45% 55%;
 }
 
 /* cta */
