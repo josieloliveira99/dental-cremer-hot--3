@@ -264,13 +264,6 @@
   max-width: 395px;
 }
 
-
-/* .hotsite--pagamento__hero-card .group-two p {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-} */
-
 .hotsite--pagamento__hero-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
