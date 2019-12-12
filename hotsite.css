@@ -63,19 +63,19 @@
   color: #184567;
   text-align: left;
   margin-bottom: 40px;
-  line-height: 15px;
+  line-height: 20px;
   max-width: 352px;
 }
 
 .hotsite--hero__icon{
-  transform: translateX(0vw) translateY(4vw);
-  padding: 0 1vw;
+  transform: translateX(-8px) translateY(53px);
+  padding: 0px 40px 0 25px;
   background-color: #fff;
-  max-width: 12vw;
+  max-width: 175px;
 }
 
 .hotsite--hero__icon img{
-  width: 90%;
+  width: 110%;
 }
 
 .hotsite--pagamento__hero{
