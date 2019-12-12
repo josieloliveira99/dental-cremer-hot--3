@@ -75,7 +75,7 @@
                     <img src="/images-hot-3/boleto.png">
                   </div>
                   <div class="hotsite--pagamento__hero-title">
-                    <h1>Boleto bancário simplificado</h1>
+                    <h1>Boleto bancário antecipado</h1>
                   </div>
                 </div>
                 <div class="hotsite--pagamento__content">
@@ -100,8 +100,7 @@
                   <div class="group-one">
                     <p>Parcele suas compras em até 10X sem juros, com parcela mínima de R$ 200.</p>
                     <p>Essa é a forma mais rápida para processar o seu pedido.</p>
-                    <p>Aceitamos as bandeiras Visa, MasterCard, Diners,</p>
-                    <p>American Express (AMEX) e Elo.</p>
+                    <p>Aceitamos as bandeiras Visa, MasterCard, Diners, American Express (AMEX) e Elo.</p>
                   </div>
                   <div class="group-two">
                     <p>Na hora de optar pelo pagamento parcelado no cartão, leve em consideração o valor total da compra e não somente o valor da parcela, a quantia deve estar dentro do limite total do seu cartão de crédito.</p>
