@@ -1,499 +1,550 @@
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto&display=swap" rel="stylesheet">
-    
     <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:800&display=swap');
 
-    #col-left, body .heading-secundary { display: none; }
-  
-    body #content { width: 100%; }
-  
-    body #col-content { margin-top: -20px; }
-  
-    body .faq {
-      border: none;
-      margin: 0 !important;
-      padding: 0;
-      width: 100%;
-    }
-  
-    body .box-primary > div { padding: 0 !important; }
-  
-    .footer-top { margin-top: 0 !important; }
-  
-    #content{ display: block; }
-  
-    .institutional-content > .heading-primary { display: none }
-
-    .institutional-content{ padding: 0 }
-  
-    /* hotsite */
 
     .hotsite--container{
       margin: 0 auto;
+      margin-top: 136px;
       max-width: 1920px;
+      width: 100%;
+      height: auto; 
       overflow: hidden;
     }
-  
+
+    .hotsite--content-wrapper{
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+
+    .hotsite--background{
+      min-height: 1926px;
+      background-image: url('//system.dentalcremer.com.br/interface/uploads/2019-dez-politicas-comerciais/desk--background.png');
+      background-repeat: no-repeat;
+      background-position-x: center;
+      margin: 0 auto;
+    }
+
+    .hotsite--frete,
+    .hotsite--prazo{
+      margin: 0 auto;
+      max-width: 764px;
+      height: 259px;
+      border: 2px solid #c3dbea;
+      border-radius: 10px;
+      background-color: #fff;
+      margin-bottom: 90px;
+      padding: 40px 63px;
+      box-sizing: border-box;
+    }
+
+    .hotsite--boletos-1,
+    .hotsite--boletos-2,
+    .hotsite--credit-card
+    {
+      height: 377px;
+      border: 2px solid #c3dbea;
+      border-radius: 0.7vw;
+      background-color: #fff;
+      padding: 2vw 1vw;
+      box-sizing: border-box;
+    }
+
+    .hotsite--frete__content,
+    .hotsite--prazo__content,
+    .hotsite--pagamento__content
+    {
+      padding-top: 0.1vw;
+    }
+
+    .hotsite--prazo__content p,
+    .hotsite--pagamento__content p,
+    .hotsite--frete__content p{
+      font-family: Roboto;
+      font-size: 15px;
+      color: #184567;
+      text-align: left;
+      margin-bottom: 40px;
+      line-height: 20px;
+      max-width: 352px;
+    }
+
+    .hotsite--hero__title h1
+    {
+      font-family: Roboto;
+      font-size: 30px;
+      font-weight: bold;
+      color: #184567;
+      text-transform: uppercase;
+      text-align: left;
+      line-height: 32px;
+      max-width: 245px;
+    }
+
+    .hotsite--hero__icon{
+      transform: translateX(-8px) translateY(53px);
+      padding: 0px 40px 0 25px;
+      background-color: #fff;
+      max-width: 175px;
+    }
+
+    .hotsite--hero__icon img{
+      width: 110%;
+    }
+
     /* style universal */
-  
+
     .padding-v{
       padding: 2.5vw 0;
     }
-  
-    /* buttons */
-  
-    .hotsite--btn{
+
+    /* title */
+
+    .hotsite--title{
       position: relative;
-      box-sizing: border-box;
-      display: inline-block;
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 1vw;
-      text-align: center;
-      text-transform: uppercase;
-      border-radius: 12px;
-      padding: 12px 37px 7px 32px;
-      transition: all 0.3s ease 0s;
-      border: 1px solid transparent;
+      text-align: left;
+      width: 413px;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 90px;
+      padding-bottom: 60px;
     }
-  
-    .hotsite--btn:hover{
+
+    .hotsite--title .ornament{
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-color: #ffa33e;
+      border-radius: 100%;
+      box-shadow: 2px 2px 15px #ffa33e;
+    }
+
+    .hotsite--title .ornament:nth-of-type(1){
+      top: 25px;
+      right: 42px;
+    }
+
+    .hotsite--title .ornament:nth-of-type(2){
+      top: 90px;
+      left: -21px;
+    }
+
+    .hotsite--title h1{
+      position: relative;
+      font-family: Roboto;
+      font-weight: 800;
+      font-size: 70px;
+      color: #ffa33e;
+      text-transform: uppercase;
+      padding:  0;
+      line-height: 65px;
+      text-shadow: 2px 2px 6px #ffa33e;
+    }
+
+    /* frete */
+
+    .hotsite--frete__wrapper,
+    .hotsite--prazo__wrapper
+    {
+      display: grid;
+      grid-template-columns: 45% 55%;
+    }
+
+    /* cta */
+
+    .hotsite--cta{
+      padding: 50px 0 70px 0;
+    }
+
+    .hotsite--cta button{
+      position: relative;
+      background-color: #184567;
+      color: #fff;
+      padding: 11px 0 15px 0;
+      border-radius: 11px;
+      border: none;
+      width: 230px;
+      font-size: 15px;
+      transition: 0.5s ease-in-out;
+    }
+
+    .hotsite--cta button:hover{
       cursor: pointer;
+      background-color: #0a2132;
       transform: scale(0.9);
     }
-  
-    .hotsite--btn.hotsite--outlined{
-      background-color: rgb(255,255,255);
-      color: rgb(0, 0, 0);
-      border: 1px solid #184567;
-    }
-  
-    .hotsite--btn.hotsite--green{
-      background-color: rgb(3, 244, 76);
-      color: rgb(0, 0, 0);
-    }
-  
+
     .arrow-icon-btn{
       position: absolute;
-      right: 0px;
+      right: 0.9vw;
       transform: translateY(-50%);
       top: 50%;
-    }
-  
-    /* carousel */
-
-    .hotsite--container .owl-page span{
-      border-color: #fff !important;
-      background-color: #c3dbea;
+      /* filter: grayscale(0%); */
+      width: 0.5vw;
     }
 
-    .hotsite--container .owl-pagination .active span{
-      border-color: #fff !important;
-      background-color: #184567 !important;
-    }
-  
-    .hotsite--carousel{
-      list-style-type: none;
+    /* pagamento */
+
+    .hotsite--pagamento{
+      margin-bottom: 50px;
     }
 
-    .hotsite--carousel .owl-page{
-      padding: 0 1vw;
+    .hotsite--pagamento__hero{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 105px auto;
     }
-  
-    .hotsite--carousel img{
-      max-width: 100vw;
-      vertical-align: top;
+
+    .hotsite--pagamento__hero-card{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 45px;
     }
-  
-    .hotsite--products .hotsite--carousel{
-      max-width: 66vw;
+
+    .hotsite--pagamento__wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 50px;
+      width: 1145px;
       margin: 0 auto;
     }
-  
-    /* hotsite--banner-principal */
 
-    .hotsite--banner-principal .hotsite--carousel .owl-page{
-      padding: 0 0.7vw;
-    }
-
-    .hotsite--banner-principal .hotsite--carousel .owl-prev,
-    .hotsite--banner-principal .hotsite--carousel .owl-next {
-      width: 17px !important;
-      height: 31px !important;
-      background: url('//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/css_sprites_arrows.png') no-repeat;
-    }
-
-    .hotsite--banner-principal .hotsite--carousel .owl-prev{
-      background-position: -10px -10px !important;
-      left: 18vw !important;
-    }
-
-    .hotsite--banner-principal .hotsite--carousel .owl-next {
-      background-position: -47px -10px !important;
-      right: 18vw !important;
-    }
-
-    .hotsite--banner-principal .owl-prev::after, 
-    .hotsite--banner-principal .owl-next::after {
-      display: none;
-    }
-
-    .hotsite--banner-principal .owl-prev:hover,
-    .hotsite--banner-principal .owl-next:hover
-     {
-      filter:contrast(200%);
-    }
-
-    /* hotsite--call-to-action */
-  
-    .hotsite--call-to-action{
-      display: flex;
-      justify-content: center;
-    }
-  
-    /* hotsite--products */
-  
-    .hotsite--products{
-      box-sizing: border-box;
-      position: relative;
-    }
-  
-    .hotsite--products h1{
-      font-size: 25px;
-      color: #184567;
-      margin-bottom: 20px;
-    }
-  
-    .hotsite--products-price{
-      font-weight: bold;
-    }
-  
-    .hotsite--products__carousel-wrapper{
-      position: relative;
-      z-index: 1000;
-      overflow: hidden;
-    }
-  
-    .hotsite--products__carousel-wrapper .owl-item{
-      margin-top: 100px
-    }
-
-    .hotsite--products .carousel__item{
-      position: relative;
-    }
-
-    .hotsite--products .carousel__item.border-right::before{
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 1;
-      right: 0vw;
-      top: 0;
-      bottom: 0;
-      height: 51%;
-      width: 1px;
-      background-color: #184567
-    }
-  
-    .hotsite--background-products{
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%) translateY(-500px);
-      background-color: #c3dbea;
-      width: 70%;
-      height: 350px;
-      border-radius: 10px;
-    }
-  
-    .hotsite--products .hotsite--products__title{
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 40px;
-      line-height: 45px;
-      font-weight: bold;
-      color: #184567;
-      margin-top: 40px;
-      text-align: center;
-    }
-  
-    .hotsite--products .carousel__item{
-      text-align: center;
-    }
-  
-    .hotsite--products .carousel__item h1{
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 25px;
-      font-weight: bold;
-      color: #184567;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-  
-    .hotsite--products .carousel__item p{
-      font-family: 'Josefin Sans', sans-serif;
-      font-size: 25px;
-      text-align: center;
-      color: #184567;
-      margin-bottom: 5px;
-    }
-  
-    .hotsite--products .carousel__item .hotsite--products-price{
-      margin-bottom: 20px;
-    }
-  
-    .info p {
-      text-align: center;
+    .hotsite--pagamento__hero-title h1
+    {
       font-family: Roboto;
-      font-size: 1.1vw;
-      font-weight: 300;
-      color: #184567;
-      margin-top: -20px;
-    }
-  
-    /* hotsite--embassador */
-  
-    .hotsite--embassador{
-      position: relative;
-    }
-  
-    .hotsite--embassador__btn-wrapper {
-      width: 100%;
-      position: absolute;
-      bottom: 17%;
-      box-sizing: border-box;
-      padding-left: 29%;
-    }
-  
-    .hotsite--embassador__btn-wrapper h1{
-      font-family: 'Josefin Sans', sans-serif;
-      max-width: 19vw;
-      font-size: 3.2vw;
-      margin-bottom: 1vw;
-      line-height: 3.5vw;
-      color: #184567;
-      font-weight: normal;
-    }
-  
-    .hotsite--embassador__btn-wrapper h1 strong{
+      font-size: 20px;
       font-weight: bold;
+      color: #184567;
+      text-transform: uppercase;
+      text-align: left;
+      line-height: 25px;
+      max-width: 180px;
+      transform: translateY(8px);
     }
-  
-  
+
+    .hotsite--pagamento__hero-icon img {
+      width: 100px;
+    }
+
+    .hotsite--pagamento__content p{
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
+    .hotsite--boletos-1 p{
+      max-width: 482px;
+    }
+
+    .hotsite--boletos-2 p{
+      max-width: 417px;
+    }
+
+    .hotsite--credit-card{
+      grid-row: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .hotsite--pagamento__content .group-one{
+      max-width: 390px;
+      transform: translatex(109px);
+    }
+
+    .hotsite--pagamento__content .group-one p{
+      max-width: 390px;
+    }
+
+    .hotsite--pagamento__content .group-two{
+      max-width: 395px;
+      transform: translatex(46px);
+    }
+
+    .hotsite--pagamento__content .group-two p{
+      max-width: 395px;
+    }
+
+
+    /* .hotsite--pagamento__hero-card .group-two p {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+    } */
+
+    .hotsite--pagamento__hero-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+    }
+
+    .hotsite--pagamento__hero-card-icon{
+      position: relative;
+      text-align: right;
+    }
+
+    .hotsite--credit-card .hotsite--pagamento__content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    /* reset template homologacao */
+
+    .institutional-content{
+      padding: 0;
+    }
+
+    .institutional-content > .heading-primary{
+      display:none;
+    }
+
     /* media queries */
-  
-    @media only screen and (max-width: 767px) 
+
+
+    @media only screen and (max-width: 767px)
     {
-
-      .desktop{
-        display: none;
-      }
-
-      .arrow-icon-btn{
-        right: 1vw;
-        width: 5vw;
-      }
-
-      .hotsite--btn{
-        padding: 20px 32px 15px 32px;
-        font-size: 4vw;
-      }
-
-      .hotsite--banner-principal .hotsite--carousel .owl-prev,
-      .hotsite--banner-principal .hotsite--carousel .owl-next {
-        display: none;
-      }
-
-      .hotsite--banner-principal .owl-pagination{
-        transform: translateY(-7vw);
-      }
-  
-      .hotsite--call-to-action{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-bottom: 20px;
-        padding: 5vw 7vw 1vw 7vw;
-      }
-
-      .hotsite--call-to-action button{
-        width: 100%;
-      }
-  
-      .hotsite--background-products {
-        width: 100%;
-        border-radius: 0px;
-      }
-
-      .hotsite--products__carousel-wrapper{
-        margin-top: 10vw;
-      }
-
-      .hotsite--products .carousel__item.border-right::before{
-        display: none;
-      }
-  
-      .info p {
-        font-size: 3.1vw;
+      .hotsite--container{
+        box-sizing: border-box;
         margin-top: 0;
-        padding: 0 5vw;
+        max-width: 100vw;
+        border: 3px solid red;
+        overflow: hidden;
       }
-  
-    }
-  
-    @media only screen and (min-width: 768px) 
-    {
-      .mobile
+
+      .hotsite--background{
+        background-image: none;
+      }
+
+      .hotsite--content-wrapper{
+        max-width: 100vw;
+      } 
+
+      .hotsite--frete,
+      .hotsite--prazo{
+        max-width: 90vw;
+        height: auto;
+        border: 0.261vw solid #c3dbea;
+        border-radius: 1.304vw;
+        margin-bottom: 11.734vw;
+        padding: 5.215vw 8.214vw;
+      }
+
+      .hotsite--boletos-1,
+      .hotsite--boletos-2,
+      .hotsite--credit-card
       {
-        display: none;
-      }    
+        height: auto;
+        border: 0.261vw solid #c3dbea;
+        border-radius: 1.304vw;
+      }
+
+      .hotsite--prazo__content p,
+      .hotsite--pagamento__content p,
+      .hotsite--frete__content p{
+        font-family: Roboto;
+        font-size: 1.956vw;
+        margin-bottom: 5.215vw;
+        line-height: 2.608vw;
+        max-width: 100vw;
+      }
+
+      .hotsite--hero__title h1
+      {
+        font-size: 5.5vw;
+        line-height: 4.172vw;
+        max-width: 100vw;
+      }
+
+      .hotsite--hero__icon{
+        transform: translateX(1.043vw) translateY(6.910vw);
+        padding: 0px 5.215vw 0 3.259vw;
+        max-width: 100vw;
+      }
+
+      .hotsite--hero__icon img{
+        width: 30%;
+      }
+
+      /* title */
+
+      .hotsite--title{
+        width: 80vw;
+        padding-top: 11.734vw;
+        padding-bottom: 11.734vw;
+      }
+
+      .hotsite--title .ornament{
+        width: 3vw;
+        height: 3vw;
+        box-shadow: 0.261vw 0.261vw 1.956vw #ffa33e;
+      }
+
+      .hotsite--title .ornament:nth-of-type(1){
+        top: 6vw;
+        right: 5.5vw;
+      }
+
+      .hotsite--title .ornament:nth-of-type(2){
+        top: 20vw;
+        left: -3.5vw;
+      }
+
+      .hotsite--title h1{
+        font-size: 14vw;
+        line-height: 14vw;
+        text-shadow: 0.261vw 0.261vw 0.782vw #ffa33e;
+      }
+
+      /* frete */
+
+      .hotsite--frete__wrapper,
+      .hotsite--prazo__wrapper
+      {
+        display: block;
+      }
+
+      /* cta */
+
+      .hotsite--cta{
+        margin: 0 auto;
+        width: 90vw;
+        padding: 6.519vw 0 9.126vw 0;
+      }
+
+      .hotsite--cta button{
+        padding: 5vw 0 6.5vw 0;
+        border-radius: 1.434vw;
+        width: 100%;
+        font-size: 6vw;
+        transition: 0.5s ease-in-out;
+      }
+
     }
-  
-  </style>
-  
-  <!--Inicio hotsite conteudo-->
+
+    @media only screen and (min-width: 768px)
+    {
       
-      <main class="hotsite--container">
-  
-        <section class="hotsite--banner-principal"> <!-- Inicio banner-principal -->
-          <div class="hotsite--banner-principal__carousel-wrapper">
-            <ul class="hotsite--carousel">
-              <li>
-               <picture>
-                 <source media="(max-width:769px)" srcset="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/mbl--banner-topo-1.png">
-                 <img src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/desk--banner-topo-1.png">
-               </picture>
-              </li>
-              <li>
-               <picture>
-                 <source media="(max-width:769px)" srcset="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/mbl--banner-topo-1.png">
-                 <img src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/desk--banner-topo-1.png">
-               </picture>
-              </li>
-              <li>
-               <picture>
-                 <source media="(max-width:769px)" srcset="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/mbl--banner-topo-1.png">
-                 <img src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/desk--banner-topo-1.png">
-               </picture>
-              </li>
-        </ul>
-          </div>
-        </section> <!-- Fim banner-principal -->
-  
-        <section class="hotsite--call-to-action padding-v"> <!-- Inicio call to action buttons -->
-          <button class="hotsite--btn hotsite--outlined">Cadastre nova lista
-            <img class="arrow-icon-btn" src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/arrow-btn.png">
-          </button>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <button class="hotsite--btn hotsite--green">Compre sua lista
-            <img class="arrow-icon-btn" src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/arrow-btn.png">
-          </button>
-        </section> <!-- Fim call to action buttons -->
-  
-        <section class="hotsite--products padding-v"> <!--Inicio products-->
-          <div class="hotsite--products__carousel-wrapper">
-            <ul class="hotsite--carousel">
-              <li class="carousel__item-wrapper">
-                <div class="carousel__item border-right">
-                  <h1>Lorem ipsum</h1>
-                  <p>pedido acima de</p>
-                  <p class="hotsite--products-price">R$ 999,00</p>
-                  <img src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/desk--bag.png">
+    }
+    </style>
+    
+    <!--Inicio hotsite conteudo-->
+    
+    <main class="hotsite--container">
+      <div class="hotsite--background">
+      <div class="hotsite--content-wrapper">
+        <section class="hotsite--title">
+          <h1>Políticas<span class="ornament"></span> comerciais<span class="ornament"></span></h1>
+        </section><!-- title -->
+
+          <section class="hotsite--frete">
+            <div class="hotsite--frete__wrapper">
+              <div class="hotsite--frete__hero">
+                <div class="hotsite--hero__title">
+                  <h1>Como funciona o frete?</h1>
                 </div>
-              </li>
-              <li class="carousel__item-wrapper">
-                <div class="carousel__item  border-right">
-                  <h1>Lorem ipsum</h1>
-                  <p>pedido acima de</p>
-                  <p class="hotsite--products-price">R$ 999,00</p>
-                  <img src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/desk--bag.png">
+                <div class="hotsite--hero__icon">
+                  <img src="//system.dentalcremer.com.br/interface/uploads/2019-dez-politicas-comerciais/frete.png">
                 </div>
-              </li>
-              <li class="carousel__item-wrapper">
-                <div class="carousel__item">
-                  <h1>Lorem ipsum</h1>
-                  <p>pedido acima de</p>
-                  <p class="hotsite--products-price">R$ 999,00</p>
-                  <img src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/desk--bag.png">
+              </div>
+              <div class="hotsite--frete__content">
+                <p>Pedidos acima de R$ 100 dão direito a Frete Grátis e em compras abaixo desse valor, será cobrada uma taxa de entrega de R$ 20.</p>
+                <p>Caso você utilize um vale-compra, para manter o frete gratuito seu carrinho deverá somar R$ 100 sem considerar o desconto.</p>
+              </div>
+            </div>
+          </section><!-- frete -->
+
+          <section class="hotsite--prazo">
+            <div class="hotsite--prazo__wrapper">
+              <div class="hotsite--prazo__hero">
+                <div class="hotsite--hero__title">
+                  <h1>Prazo de entrega</h1>
                 </div>
-              </li>
-            </ul>
-          </div>
-          <div class="hotsite--background-products">
-            <h1 class="hotsite--products__title">Seus Brindes!</h1>
-          </div>
-          <div class="info">
-            <p>*Imagens ilustrativas. Os brindes estão sujeitos à disponibilidade do estoque e poderão ser substituídos, caso necessário</p>
-          </div>
-        </section> <!-- Fim products -->
-  
-        <section class="hotsite--embassador"> <!--Inicio embassador -->
-          <div class="hotsite--embassador__carousel-wrapper">
-            <ul class="hotsite--carousel">
-              <li class="carousel__item-wrapper">
-                <div class="carousel__item">
-                  <picture>
-                    <source media="(max-width:769px)" srcset="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/mbl--background-embaixador.png">
-                    <img src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/desk--background-embaixador.png">
-                  </picture>
-                  <div class="hotsite--embassador__btn-wrapper desktop">
-                    <h1>Ganhe até <strong>100%</strong> da sua lista.</h1> 
-                    <button class="hotsite--btn hotsite--green">Seja um embaixador
-                      <img class="arrow-icon-btn" src="//system.dentalcremer.com.br/interface/uploads/2019-brindes-desk-mob/arrow-btn.png">
-                    </button> 
-                  </div> <!-- hotsite--embassador__btn-wrapper -->
+                <div class="hotsite--hero__icon">
+                  <img src="//system.dentalcremer.com.br/interface/uploads/2019-dez-politicas-comerciais/prazo.png">
                 </div>
-              </li>
-            </ul>
+              </div>
+              <div class="hotsite--prazo__content">
+                <p>O prazo ao lado é exibido em dias úteis, você poderá iniciar a contagem a partir do momento em que seu pedido for faturado.</p>
+                <p>Fique tranquilo, você receberá um email de aviso quando isso acontecer.</p>
+              </div>
+            </div>
+          </section><!-- prazo -->
+        </div><!-- background -->
+
+        <section class="hotsite--cta">
+          <div class="hotsite--cta__wrapper">
+            <button>Acompanhe seu pedido <img class="arrow-icon-btn" src="//system.dentalcremer.com.br/interface/uploads/2019-dez-politicas-comerciais/arrow-btn.png"></button>
           </div>
-        </section> <!-- Fim embassador -->
-  
-      </main>
-     
-      <script>
-        
-        $(document).ready(function() {
-          
-          $(".hotsite--banner-principal .hotsite--carousel").owlCarousel({ 
-            navigation: true, 
-            pagination: true, 
-            singleItem: true, 
-            responsive: true, 
-            autoPlay: true
-          });
+        </section><!-- cta -->
 
-          $(".hotsite--products .hotsite--carousel").owlCarousel({ 
-            navigation: false, 
-            pagination: true, 
-            singleItem: false, 
-            responsive: true, 
-            autoPlay: true,
-            itemsDesktopSmall: [3000,3]
-          });  
-  
-          $(".hotsite--embassador .hotsite--carousel").owlCarousel({ 
-            navigation: false, 
-            pagination: true, 
-            singleItem: true, 
-            responsive: true, 
-            autoPlay: true
-          });
+        <section class="hotsite--pagamento">
+          <div class="hotsite--pagamento__wrapper">
+            <div class="hotsite--boletos-1">
+              <div class="hotsite--boletos-1__wrapper">
+                <div class="hotsite--pagamento__hero">
+                  <div class="hotsite--pagamento__hero-icon">
+                    <img src="//system.dentalcremer.com.br/interface/uploads/2019-dez-politicas-comerciais/boleto.png">
+                  </div>
+                  <div class="hotsite--pagamento__hero-title">
+                    <h1>Boleto bancário a prazo</h1>
+                  </div>
+                </div>
+                <div class="hotsite--pagamento__content">
+                  <p>Parcele suas compras em até 6X sem juros, com parcela mínima de R$ 200.</p>
+                  <p>Caso opte por essa modalidade, você receberá por e-mail e Correios uma fatura mensal que consolida todos os boletos do período.</p>
+                  <p>O vencimento é escolhido automaticamente pelo sistema e não pode ser alterado, ele varia entre os dias 16, 21 ou 26 de cada mês.</p>
+                </div>
+              </div><!-- boletos-1 wrapper -->
+            </div><!-- boletos-1  -->
 
-          var slideUp = {
-            interval: 300,
-            mobile: false,
-            distance: '150%',
-            origin: 'top',
-            duration: 2000
-          };
+            <div class="hotsite--boletos-2">
+              <div class="hotsite--boletos-2__wrapper">
+                <div class="hotsite--pagamento__hero">
+                  <div class="hotsite--pagamento__hero-icon">
+                    <img src="//system.dentalcremer.com.br/interface/uploads/2019-dez-politicas-comerciais/boleto.png">
+                  </div>
+                  <div class="hotsite--pagamento__hero-title">
+                    <h1>Boleto bancário antecipado</h1>
+                  </div>
+                </div>
+                <div class="hotsite--pagamento__content">
+                  <p>Nesta opção o boleto é gerado na hora da compra. Você tem até 5 dias para efetuar o pagamento e seu pedido ficará retido até que ele seja confirmado.</p>
+                  <p>Caso opte por esse formato, você ganhará 3% de desconto.</p>
+                  <p>Para adiantar a liberação do pedido, envie o comprovante para o e-mail deposito@dentalcremer.com.br.</p>
+                </div>
+              </div><!-- boletos-2 wrapper -->
+            </div><!-- boletos-2  -->
 
-          var elements = $('.hotsite--products .carousel__item-wrapper');
+            <div class="hotsite--credit-card">
+              <div class="hotsite--credit-card__wrapper">
+                <div class="hotsite--pagamento__hero-card">
+                  <div class="hotsite--pagamento__hero-card-icon">
+                    <img src="//system.dentalcremer.com.br/interface/uploads/2019-dez-politicas-comerciais/card.png">
+                  </div>
+                  <div class="hotsite--pagamento__hero-title">
+                    <h1>Cartão de crédito</h1>
+                  </div>
+                </div>
+                <div class="hotsite--pagamento__content">
+                  <div class="group-one">
+                    <p>Parcele suas compras em até 10X sem juros, com parcela mínima de R$ 200.</p>
+                    <p>Essa é a forma mais rápida para processar o seu pedido.</p>
+                    <p>Aceitamos as bandeiras Visa, MasterCard, Diners, American Express (AMEX) e Elo.</p>
+                  </div>
+                  <div class="group-two">
+                    <p>Na hora de optar pelo pagamento parcelado no cartão, leve em consideração o valor total da compra e não somente o valor da parcela, a quantia deve estar dentro do limite total do seu cartão de crédito.</p>
+                    <p>Importante: compras no cartão de crédito não serão consolidadas na fatura mensal.</p>
+                  </div>
+                </div>
+              </div><!-- credit-card wrapper -->
+            </div><!-- credit-card  -->
 
-          ScrollReveal().reveal(elements, slideUp);
-          ScrollReveal().reveal(".hotsite--products__title", {
-            mobile: false,
-            scale: 0.5, 
-            duration: 1000,
-            delay: 2000
-            });  
-          });
-      </script>
+          </div><!-- content wrapper -->
+        </div><!-- background -->
+      </section><!-- pagamento -->
 
-      <script src="https://unpkg.com/scrollreveal"></script>
-  
-      <!--Fim hotsite conteudo-->
+    </main>
+   
+    <!--Fim hotsite conteudo-->
+    
+    
