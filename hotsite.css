@@ -36,18 +36,6 @@
   box-sizing: border-box;
 }
 
-.hotsite--hero__title h1
-{
-  font-family: Roboto;
-  font-size: 30px;
-  font-weight: bold;
-  color: #184567;
-  text-transform: uppercase;
-  text-align: left;
-  line-height: 32px;
-  max-width: 245px;
-}
-
 .hotsite--boletos-1,
 .hotsite--boletos-2,
 .hotsite--credit-card
@@ -79,6 +67,18 @@
   max-width: 352px;
 }
 
+.hotsite--hero__title h1
+{
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  color: #184567;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 32px;
+  max-width: 245px;
+}
+
 .hotsite--hero__icon{
   transform: translateX(-8px) translateY(53px);
   padding: 0px 40px 0 25px;
@@ -104,7 +104,7 @@
   width: 413px;
   margin: 0 auto;
   padding: 0;
-  padding-top: 75px;
+  padding-top: 90px;
   padding-bottom: 60px;
 }
 
@@ -170,6 +170,7 @@
 .hotsite--cta button:hover{
   cursor: pointer;
   background-color: #0a2132;
+  transform: scale(0.9);
 }
 
 .arrow-icon-btn{
