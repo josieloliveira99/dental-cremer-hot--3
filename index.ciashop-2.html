@@ -2,9 +2,8 @@
 
   <style>
 
-    .hotsite--container{
+.hotsite--container{
       margin: 0 auto;
-      /* margin-top: 136px; */
       max-width: 1920px;
       width: 100%;
       height: auto; 
@@ -56,6 +55,7 @@
     .hotsite--pagamento__content
     {
       padding-top: 0.1vw;
+      /* display: flex; */
     }
 
     .hotsite--prazo__content p,
@@ -84,8 +84,8 @@
 
     .hotsite--hero__icon{
       -webkit-transform: translateX(-8px) translateY(53px);
-          -ms-transform: translateX(-8px) translateY(53px);
-              transform: translateX(-8px) translateY(53px);
+      -ms-transform: translateX(-8px) translateY(53px);
+      transform: translateX(-8px) translateY(53px);
       padding: 0px 40px 0 25px;
       background-color: #fff;
       max-width: 175px;
@@ -151,6 +151,8 @@
     .hotsite--frete__wrapper,
     .hotsite--prazo__wrapper
     {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
 
@@ -280,8 +282,8 @@
       line-height: 25px;
       max-width: 180px;
       -webkit-transform: translateY(8px);
-          -ms-transform: translateY(8px);
-              transform: translateY(8px);
+      -ms-transform: translateY(8px);
+      transform: translateY(8px);
     }
 
     .hotsite--pagamento__hero-icon img {
@@ -302,55 +304,13 @@
       max-width: 417px;
     }
 
+    /* credit card */
+
     .hotsite--credit-card{
-      -ms-grid-row: 2;
-      grid-row: 2;
       -ms-grid-column: 1;
-          grid-column-start: 1;
-      -ms-grid-column-span: 2;
+      grid-column-start: 1;
+      -ms-grid-column-span: 3;
       grid-column-end: 3;
-    }
-
-    .hotsite--pagamento__content .group-one{
-      max-width: 390px;
-      -webkit-transform: translatex(109px);
-          -ms-transform: translatex(109px);
-              transform: translatex(109px);
-    }
-
-    .hotsite--pagamento__content .group-one p{
-      max-width: 390px;
-    }
-
-    .hotsite--pagamento__content .group-two{
-      max-width: 395px;
-      -webkit-transform: translatex(46px);
-          -ms-transform: translatex(46px);
-              transform: translatex(46px);
-    }
-
-    .hotsite--pagamento__content .group-two p{
-      max-width: 395px;
-    }
-
-    .hotsite--pagamento__hero-card {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 40px 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 40px;
-    }
-
-    .hotsite--pagamento__hero-card-icon{
-      position: relative;
-      text-align: right;
-    }
-
-    .hotsite--credit-card .hotsite--pagamento__content{
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
     }
 
     /* reset template homologacao */
@@ -670,6 +630,76 @@
         width: 55%;
       }
 
+      .hotsite--pagamento__hero-card{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+
+      .hotsite--pagamento__hero-card .hotsite--pagamento__hero-card-icon{
+        width: calc(50% - 22px);
+        margin-right: 46px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+      }
+
+      .hotsite--pagamento__hero-card .hotsite--pagamento__hero-title{
+        width: calc(50% - 24px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+
+      .hotsite--pagamento__hero-card .hotsite--pagamento__hero-title h1{
+        -webkit-transform: translateX(2px) translateY(0px);
+            -ms-transform: translateX(2px) translateY(0px);
+                transform: translateX(2px) translateY(0px);
+        max-width: 193px;
+      }
+
+      .hotsite--credit-card .hotsite--pagamento__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+
+      .hotsite--pagamento__content .group-one{
+        -webkit-transform: translate(80px, 5px);
+            -ms-transform: translate(80px, 5px);
+                transform: translate(80px, 5px);
+        width: 440px;
+      }
+
+      .hotsite--pagamento__content .group-two{
+        max-width: 440px;
+        -webkit-transform: translate(185px, 5px);
+            -ms-transform: translate(185px, 5px);
+                transform: translate(185px, 5px);
+      }
+      
+      .hotsite--pagamento__content .group-one p{
+        max-width: 400px;
+      }
+
+      .hotsite--pagamento__content .group-two p{
+        max-width: 418px;
+      }
+
+      span.line-brk-desktop {
+          display: block;
+      }
+
+      .discount img{
+        width: 135px;
+      }
+
     }
     </style>
     
@@ -768,17 +798,16 @@
                     <img src="//system.dentalcremer.com.br/interface/uploads/2019-dez-politicas-comerciais/card.png">
                   </div>
                   <div class="hotsite--pagamento__hero-title">
-                    <h1>Cartão de crédito</h1>
+                    <h1>Cartão <span class="line-brk-desktop">de crédito</span></h1>
                   </div>
                 </div>
                 <div class="hotsite--pagamento__content">
                   <div class="group-one">
                     <p>Parcele suas compras em até 10X sem juros, com parcela mínima de R$ 200.</p>
-                    <p>Essa é a forma mais rápida para processar o seu pedido.</p>
-                    <p>Aceitamos as bandeiras Visa, MasterCard, Diners, American Express (AMEX) e Elo.</p>
+                    <p>Essa é a forma mais rápida para processar o seu pedido. Aceitamos as bandeiras Visa, MasterCard, Diners,<span class="line-brk-desktop"> American Express (AMEX) e Elo.</span></p>
                   </div>
                   <div class="group-two">
-                    <p>Na hora de optar pelo pagamento parcelado no cartão, leve em consideração o valor total da compra e não somente o valor da parcela, a quantia deve estar dentro do limite total do seu cartão de crédito.</p>
+                    <p>Na hora de optar pelo pagamento parcelado no cartão, leve <span class="line-brk-desktop">em consideração o valor total da compra e não somente o</span> valor da parcela, a quantia deve estar dentro do limite total do <span class="line-brk-desktop">seu cartão de crédito.</span></p>
                     <p>Importante: compras no cartão de crédito não serão consolidadas na fatura mensal.</p>
                   </div>
                 </div>
